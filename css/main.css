@@ -1,0 +1,177 @@
+*{
+  margin: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.headerr{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+.logo{
+  font-size: 1.7em;
+  color: #fff;
+  text-decoration: none;
+}
+.navv a{
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+}
+.navv a::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+.navv a:hover::after{
+  transform: scaleX(1);
+}
+.home{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background: url(../photos/cup-coffee-with-pile-coffee-beans.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 80px 100px;
+}
+.home .content{
+  max-width: 600px;
+}
+.content h2{
+  font-size:3em;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+.content p{
+  color: #fff;
+  margin: 30px 40px;
+  line-height: 1.5;
+}
+.content a{
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  font-weight: 500;
+  padding: 10px 40px;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.content a:hover{
+  background-color: #1e0b04;
+}
+.home .warrper-login{
+  position: relative;
+  width: 400px;
+}
+.home .warrper-login h2{
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+.warrper-login .input-box{
+position: relative;
+width: 100%;
+height: 50px;
+margin: 40px 0px;
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding-left: 50px;
+  color: #CCC;
+}
+.input-box label{
+  position: absolute;
+  font-size: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.input-box input:focus~label{
+  font-size: 0.8em;
+  top: -14px;
+  left: 17px;
+}
+.input-box input:valid~label{
+  font-size: 0.8em;
+  top: -14px;
+  left: 17px;
+}
+.input-box .icon{
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  font-size: 1.2em;
+  color: #fff;
+}
+.warrper-login .rememper-forget{
+  font-size: 0.9em;
+  color: #fff;
+  font-weight: 500;
+  margin: -25px 0px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.rememper-forget a{
+  color: #fff;
+  text-decoration: none;
+}
+.rememper-forget a:hover{
+  text-decoration: underline;
+}
+.rememper-forget label input{
+  accent-color: #1e0b04;
+  margin-right: 3px;
+}
+.warrper-login .btn{
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background: linear-gradient(90deg,#1e0b04,#71412a);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  color: #fff;
+}
+.warrper-login .register-link{
+  margin: 30px 0px;
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+}
+.warrper-login .register-link p a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.warrper-login .register-link p a:hover{
+  text-decoration: underline;
+}
